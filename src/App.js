@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Jobs from './components/Jobs'
 
 function App() {
+  const jobs = {
+    a:{
+      name:'asp.net',
+      salay: '1000'
+    },
+    b:{
+      name:'asp.net',
+      salay: '1000'
+    },
+    c:{
+      name:'asp.net',
+      salay: '1000'
+    },
+
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       
+        <Jobs jobs={jobs} ></Jobs>
+
     </div>
   );
 }
