@@ -23,10 +23,11 @@ code {
  
 }
 .search input {
-  width: 300px;
-  height: 30px;
+  width: 200px;
+  height: 20px;
   border-radius: 10px;
   padding: 5px;
+  margin: 0 20px;
 }
 .search label {
   padding: 5px;
@@ -39,12 +40,20 @@ code {
   background: #FFFFFF;
   width: 200px;
   border-radius: 4px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   overflow: hidden;
   margin: 30px;
+  opacity: 0.8;
   /* padding: 50px; */
   /* height: 200px; */
+}
+.card:hover{
+  cursor: pointer;
+  opacity: 1;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+
+  transition: opacity 0.15s ease-out;
 }
 .card-header {
   position: relative;
@@ -148,4 +157,32 @@ code {
   padding: 20px 20px 0;
   color: #333333;
   font-weight: 600;
+}
+.lists ul {
+  list-style: none;
+  background-color: gray;
+  width: 288px;
+  padding: 20px 0px;
+  border-radius: 8px;
+
+}
+.lists li {
+  padding: 5px 0;
+  height: 50px;
+  width: 100%;
+  /* border-bottom: 2px solid #066; */
+  margin: 10px 0px;
+  background-color: #736f6f;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.lists li:hover {
+  width: 100%;
+  /* border-bottom: 2px solid #066; */
+  cursor: pointer;
+  background-color: #fff;
+  color: gray;
+
 }
