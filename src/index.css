@@ -15,17 +15,19 @@ code {
 .container{
   display: grid;
   grid-template-columns: auto auto auto  auto auto auto;
-  padding: 100px;
+  padding: 20px;
 }
 .search {
-  padding: 20px;
-  background-color: gray;
+  padding: 10px;
+  background-color: #8080804d;
+  display: inline-block;
+  width: 80%;
  
 }
 .search input {
   width: 200px;
-  height: 20px;
-  border-radius: 10px;
+  height: 10px;
+  /* border-radius: 10px; */
   padding: 5px;
   margin: 0 20px;
 }
@@ -158,24 +160,28 @@ code {
   color: #333333;
   font-weight: 600;
 }
-.lists ul {
+.ul-list {
   list-style: none;
   background-color: gray;
   width: 288px;
   padding: 20px 0px;
   border-radius: 8px;
+  max-height: 600px;
+  overflow: hidden;
+  overflow-y: scroll;
 
 }
-.lists li {
+.li-list {
   padding: 5px 0;
   height: 50px;
   width: 100%;
   /* border-bottom: 2px solid #066; */
   margin: 10px 0px;
-  background-color: #736f6f;
+  /* background-color: #736f6f; */
   line-height: 50px;
   text-align: center;
-  color: #fff;
+  color: #FFF;
+  border: 1px solid #FFF;
 }
 
 .lists li:hover {
@@ -185,4 +191,70 @@ code {
   background-color: #fff;
   color: gray;
 
+}
+
+.pagination {
+  margin: 15px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+}
+.pagination > .active > a{
+  background-color: #47ccde ;
+  border-color: #47ccde ;
+  color: #fff;
+}
+.pagination > li > a{
+  border: 1px solid #47ccde ;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+  background-color: #47ccde ;
+  border-color: #47ccde;
+  outline: none ;
+}
+.pagination > li > a, .pagination > li > span{
+  color: #47ccde
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+  border-radius: unset
+}
+
+.btn-view {
+  background-color: #FFF;
+  padding: 4px 10px;
+  border: 1.5px solid #5a6168;
+  float: right;
+  margin: 2px;
+}
+
+.btn-view:hover {
+  background-color: #5a6168;
+  color: #FFF;
+  cursor: pointer;
+}
+.header {
+  width: 100%;
+  background-color:#5a6168 ;
+  color: #FFF;
+  
+}
+.pagination {
+  display: inline-flex !important;
+}
+
+.pagination a,li {
+  color: #5a6168 ;
+}
+.pagination a:active {
+  color: #5a6168 !important;
+}
+
+.lists {
+  display: flex;
+}
+.lists .card {
+ width: 900px;
 }
